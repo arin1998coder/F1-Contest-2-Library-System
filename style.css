@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    }
+
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+   
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+/*Responsive Nav bar */
+
+input[type=checkbox] {
+    display: none;
+    } 
+    
+    /* HAMBURGER MENU */
+    .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    }
+    
+    /* APPLYING MEDIA QUERIES */
+    @media (max-width: 768px) {
+    .menu {
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    }
+    
+    .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+    }
+    
+    .menu li + li {
+    margin-top: 12px;
+    }
+    
+    input[type=checkbox]:checked ~ .menu {
+    display: block;
+    }
+    
+    .hamburger {
+    display: block;
+    }
+    }
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(223, 227, 232);
+}
+
+.books-table{
+
+    width: 60%;
+    background-color:white;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.outer-table{
+    width: 100%;
+}
+
+.books-table h1{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.outer-table, td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+.book-title{
+    width: fit-content;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.nested-table{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nested-table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.nested-table-container{
+    
+     padding: 10px;
+}
+
+th{
+    text-align: left;
+    padding-left: 10px;
+    padding: 10px;
+}
+
+td{
+    padding-left: 10px;
+    padding: 5px;
+}
+
+/* Add padding to containers */
+
+.registration-form{
+    width: 60%;
+    background-color:white;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 30px;
+}
+.container {
+    padding: 12px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] ,input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  
+
+
+
+
+
+
+
+
